@@ -6,6 +6,7 @@ A simple pneumatic actuator was modeled in the [SOFA Framework](https://www.sofa
 ---
 
 ## Demo
+This demo show the movements of the simple pnuematic actuator in simulation during the dataset generation process.
 <p align="center">
   <img src="SOFASImulationGIF.gif" width="600" alt="SOFA Pneumatic Actuator RNN Control Demo"/>
 </p>
@@ -16,8 +17,8 @@ A simple pneumatic actuator was modeled in the [SOFA Framework](https://www.sofa
 
 - **Simulation Environment**: SOFA Framework was used to model a pneumatic actuator.  
 - **Dataset Generation**:  
-  - Random pressure inputs were applied across the actuator’s entire joint space.  
-  - Resulting actuator states (positions, velocities) were recorded to build a training dataset.  
+  - Semi-Random pressure inputs were applied to the actuator to ensure data covers the entire joint space.  
+  - Resulting actuator states (pressure, positions, velocities) were recorded at a regular interval to build a training and testing datasets.  
 - **Model Training**:  
   - A **Recurrent Neural Network (RNN)** was trained as an **inverse dynamics model**.  
   - The RNN maps a desired position to the actuator’s required input pressure.  
@@ -27,8 +28,9 @@ A simple pneumatic actuator was modeled in the [SOFA Framework](https://www.sofa
 ---
 
 ## Repository Structure
-  -data
-    -training
-    -test
-    -mesh
+  - Data:
+    - Training: training data generated in simulation.
+    - Test: test data used to verify accuracy of trained model.
+    - Mesh: the mesh for the simple pneumatic actuator
+  - Results: contains the graphs of actuators position and error over time using the trained model to control the actuator.
   
