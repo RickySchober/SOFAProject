@@ -5,14 +5,14 @@ A simple pneumatic actuator was modeled in the [SOFA Framework](https://www.sofa
 
 ---
 
-## 🎥 Demo
+## Demo
 <p align="center">
-  <img src="SOFASimulationGIF.gif" width="600" alt="SOFA Pneumatic Actuator RNN Control Demo"/>
+  <img src="SOFASImulationGIF.gif" width="600" alt="SOFA Pneumatic Actuator RNN Control Demo"/>
 </p>
 
 ---
 
-## 📖 Project Overview
+## Project Overview
 
 - **Simulation Environment**: SOFA Framework was used to model a pneumatic actuator.  
 - **Dataset Generation**:  
@@ -26,5 +26,9 @@ A simple pneumatic actuator was modeled in the [SOFA Framework](https://www.sofa
 
 ---
 
-## 📂 Repository Structure
-
+## Repository Structure
+  -data
+    -training
+    -test
+    -mesh
+  
